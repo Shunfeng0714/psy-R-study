@@ -1,0 +1,22 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+#`text1/`
+#忽略文件夹text1
+#`text2/*.txt`
+#忽略文件夹text2中所有以.txt结尾的文件
+#`text3/secret.txt`
+#忽略文件夹text3中的secret.txt文件
+#`!important.log`
+#不会忽略`important.log`文件
+#`(空白行)`
+#`gitgnore文件中的空白行会被git忽略
+#`*``?``[abc]`
+#匹配任意数量的字符
+#匹配单个字符
+#匹配任何一个在括号中的字符
+#处理debug
+#是不是先添加的文件后修改的gitgnore？那么文件可能已经被git追踪，存在缓存，仅修改gitgnore是不够的，可以尝试在左下角子窗口的terminal下输入gitrm --cached -r<目录名>/git rm --cached<文件名>这个命令
+#不存在缓存问题？先检查一下是不是语法问题
+#在terminal输入git check-ignore-v.gitgnore检查.gitgnore文件时候被git忽略。如果命令输出没有问题，这意味着.gitgnore是有效的并被git正确处理
